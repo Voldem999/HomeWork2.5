@@ -3,8 +3,12 @@ package com.example.homework25;
 import java.util.Objects;
 
 public class Employee {
-    private final String firstName;
-    private final String lastName;
+    public String firstName;
+    public String lastName;
+
+    public String getFullName() {
+        return firstName + " " + lastName;
+    }
 
     public Employee(String firstName, String lastName) {
         this.firstName = firstName;
